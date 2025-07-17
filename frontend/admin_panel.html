@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+</head>
+<body>
+  <h2>Approve/Reject Leave</h2>
+  <form action="/leave-management/update-status" method="post">
+    Leave Request ID: <input type="number" name="leave_id"><br>
+    Status:
+    <select name="status">
+      <option value="Approved">Approve</option>
+      <option value="Rejected">Reject</option>
+    </select><br>
+    <input type="submit" value="Update">
+  </form>
+</body>
+</html>
